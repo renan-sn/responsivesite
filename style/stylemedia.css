@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box; 
+}
+
+html, body {
+    
+}
+
+body {
+    background: #2D2B55;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABECALHO */
+header.cabecalho {
+    background: #9EFFFF;
+    width: 100%; 
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* menu */
+div.menu {
+    background: #C7A033;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+div.menu .ul-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: start;
+    grid-gap: 7px;
+    padding-left: 2%;
+}
+
+.ul-menu a li {
+    list-style: none; 
+}
+
+.ul-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+div.menu div.buscar {
+    display: flex;
+    flex-direction: row;
+    justify-self: right;
+    align-items: center;
+    padding-right: 2%;
+}
+
+div.buscar input[type=text] {
+    background: rgba(65, 51, 13, 0.404);
+    width: 70%;
+    padding: 7px;
+    border-style: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+}
+
+div.buscar button.buscar {
+    background: rgba(65, 51, 13, 0.404);
+    width: auto;
+    padding: 7px;
+    border-style: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white
+}
+
+
+/* CONTAINER */
+div.container {
+    background: #2D2B55;
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+div.centro {
+    background: white;
+    border: solid 1px;
+}
+
+div.barra-esquerda {
+    background: white;
+    border: solid 1px;
+}
+
+
+/* RODAPÉ */
+footer.rodape {
+    background: #5E748B;
+    width: 100%;
+    height: 300px;
+}
