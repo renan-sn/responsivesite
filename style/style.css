@@ -25,16 +25,16 @@
  header.cabecalho {
 	 background:transparent;
 	 width: 100%; 
-	 height: 300px;
+	 height: 50px;
 	 display: grid;
 	 grid-template-columns: repeat(1, 1fr);
  }
 
 /* menu */
  div.menu {
-	 background: rgba(255, 255, 255, 0.418);
+	 background: transparent;
 	 width: 100%;
-	 height: 50px;
+	 height: 43px;
 	 position: fixed;
 	 display: grid;
 	 grid-template-columns: 60% 40%;
@@ -46,7 +46,7 @@
 	 align-items: center;
 	 justify-content: start;
 	 grid-gap: 0px;
-	 padding-left: 10%;
+	 padding-left: 4.3%;
  }
  
  .ul-menu a {
@@ -54,11 +54,12 @@
 	 color: white;
 	 padding: 15px 20px;
 	 height: 100%;
+	 font-size: 14px;
  }
 
  .ul-menu a:hover {
 	 transition: all .2s;
-	 background: red;
+	 background: rgba(0, 0, 0, 0.404);
  }
  
  .ul-menu a li {
@@ -70,13 +71,13 @@
 	 flex-direction: row;
 	 justify-self: right;
 	 align-items: center;
-	 padding-right: 15%;
+	 padding-right: 2%;
  }
 
  div.buscar input[type=text] {
 	 width: 180px;
 	 padding: 6px;
-	 background: rgba(65, 51, 13, 0.404);
+	 background: rgba(0, 0, 0, 0.404);
      width: 70%;
      padding: 10px;
      border-style: none;
@@ -88,7 +89,7 @@
  div.buscar button.buscar {
 	 width: auto;
 	 padding: 6px;
-	 background: rgba(65, 51, 13, 0.404);
+	 background: rgba(0, 0, 0, 0.404);
      width: auto;
      padding: 10px;
      border-style: none;
@@ -102,11 +103,11 @@
  }
 
 
- /* CONTAINER */
+ /* CONTAINER - conteudo do site */
  div.container {
 	 background: rgba(56, 55, 55, 0.822);
 	 width: 95%;
-	 min-height: 500px;
+	 max-height: 600px;
 	 display: grid;
 	 grid-template-columns: auto 75%;
  }
@@ -115,7 +116,7 @@
  /* menu lateral esquerdo do conteudo */
  div.barra-esquerda {
 	background: transparent;
-	padding: 20px 10px;
+	padding: 20px 0 20px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -129,10 +130,11 @@
 
  div.barra-esquerda ul.lista-barra-lateral {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	background: rgba(233, 232, 230, 0.459);
-	height: 100vh;
+	display: grid;
+	row-gap: 5px;
+	background: rgba(10, 10, 10, 0.459);
+	max-height: 600px;
+	height: 75vh;
 	overflow: auto;
  }
 
@@ -146,7 +148,7 @@
 
  div.barra-esquerda ul.lista-barra-lateral a:hover {
 	 transition: all .2s;
-	 background: red;
+	 background: rgba(0, 0, 0, 0.404);
  }
 
  div.barra-esquerda ul.lista-barra-lateral li {
@@ -157,8 +159,11 @@
  /* centro do conteudo */
  div.centro {
 	background: transparent;
-	padding: 20px 25px;
+	padding: 20px 40px;
 	color: #ffd;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
  }
 
  div.centro .titulo {
@@ -168,18 +173,34 @@
  }
 
  div.centro .texto {
+	 font-family: Ubuntu, sans-serif;
 	 font-weight: 100;
-	 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	 font-size: 17px;
 	 line-height: 22px;
 	 text-indent: 25px;
  }
 
+ div.centro div.imagens {
+	 width: 100%;
+	 display: grid;
+	 grid-template-columns: repeat(3, 1fr);
+	 column-gap: 15px;
+	 row-gap: 20px;
+	 margin-bottom: 35px;
+ } 
+
+ div.centro div.imagens img {
+	 width: 270px;
+	 height: 170px;
+	 border-radius: 5px;
+	 border: ridge;
+ }
+
 
 
  /* RODAPÉ */
- footer.rodape {
+ /* footer.rodape {
 	 background: rgba(255, 255, 255, 0.418);
 	 width: 100%;
 	 height: 300px;
- }
+ } */
